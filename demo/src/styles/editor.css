@@ -1,0 +1,110 @@
+  .public-DraftStyleDefault-ul {
+    display: inline-block;    
+  }
+
+  div.DraftEditor-root {
+    height: 100%;
+  }
+  div.DraftEditor-editorContainer,
+  div.public-DraftEditor-content {
+    height: 100%;
+  }
+
+  blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+div[class^="draftJsToolbar"] {
+  z-index: 2000;
+}
+
+div[class^="draftJsToolbar"] input:focus {
+  border: 0px !important;
+  outline: none !important;
+}
+
+.mentions-input {
+  border: 1px solid rgba(34,36,38,.15);
+  padding: 5px; 
+  position: 'relative';
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none !important;
+  pointer-events: 'none';
+}
+
+.unselectable * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none !important;
+  pointer-events: 'none';
+}
+
+.editor-wrapper {
+  position: relative;
+}
+
+.wrapper-toolbar {
+  width: 220px;
+  position: absolute;
+  right: 0;
+  
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.1s, opacity 0.1s linear;
+}
+
+.wrapper-toolbar.shown {
+  visibility: visible;
+  opacity: 1;
+}
+
+button.disabled-toolbar-button {
+  pointer-events: none;
+}
+
+.invalid-url, input[class*="inputInvalid"] {
+  border: 1px solid red;
+}
+
+button.disabled-toolbar-button svg{
+  fill: lightgray !important;
+}
+
+:root {
+  --gradient1: rgb(211, 211, 211);
+  --gradient2: white;
+}
+
+div[class^="draftJsMentionPlugin__mentionSuggestions_"] {
+  max-height: 280px;
+  overflow: auto;
+  z-index: 10;
+  background:
+  linear-gradient(white 30%, var(--gradient1)),
+  linear-gradient(var(--gradient1), white 70%) 0 100%,
+  radial-gradient(50% 0, farthest-side, var(--gradient1), var(--gradient2)),
+  radial-gradient(50% 100%,farthest-side, var(--gradient1), var(--gradient2)) 0 100%;
+background:
+  linear-gradient(white 30%, rgba(255,255,255,0)),
+  linear-gradient(rgba(255,255,255,0), white 70%) 0 100%, 
+  radial-gradient(farthest-side at 50% 0, var(--gradient1), var(--gradient2)),
+  radial-gradient(farthest-side at 50% 100%, var(--gradient1), var(--gradient2)) 0 100%;
+background-repeat: no-repeat;
+background-color: white;
+background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+background-attachment: local, local, scroll, scroll;
+}

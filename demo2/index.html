@@ -1,0 +1,99 @@
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <!--Import materialize.css-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/main.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta charset="utf-8">      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <!-- Dropdown Structure -->
+	  <nav>
+	    <div class="nav-wrapper">
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+	        <li><a href="sass.html"><i class="material-icons">replay</i></a></li>
+	        <li><a href="#" class="mdlAddUsers"><i class="material-icons">add</i></a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+	        <li><a href="sass.html"><i class="material-icons">replay</i></a></li>
+	        <li><a href="#" class="mdlAddUsers"><i class="material-icons">add</i></a></li>
+	      </ul>
+	    </div>
+	  </nav>
+    <!-- Mi contenido Principal -->
+      <div class="progress loaderAjaxPrincipal">
+       <div class="indeterminate"></div>
+      </div>
+      <ul class="collection listaUsers"></ul>
+
+
+      <!-- Modal Agregar -->
+      <div id="mdlUsers" class="modal modal-fixed-footer modalUsers">
+        <div class="modal-content">
+          <h4 id="mdlTitulo"></h4>
+           <div class="progress loaderAjaxCRUD">
+            <div class="indeterminate"></div>
+           </div>
+          <div class="row">
+            <form class="col s12 formUsers">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="first_name" type="text" class="validate" required="required">
+                  <label for="first_name">First Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="last_name" type="text" class="validate" required="required">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="password" type="password" class="validate" required="required">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">today</i>
+                  <input id="txtFechaNacimiento" type="date" class="datepicker" required="required">
+                  <label for="txtFechaNacimiento">Birthday</label>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                <select id="selSexo" required="required">
+                  <option value="" disabled selected>Seleccionar</option>
+                  <option value="1">Female</option>
+                  <option value="2">Male</option>
+                </select>
+                <label>Gender</label>
+                </div>                
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button  class="waves-effect waves-light btn btnGuardar"><i class="material-icons left">done</i>Save</button>
+          <button class="modal-action modal-close waves-effect waves-green btn-flat "><i class="material-icons left">replay</i>Close</button>
+        </div>
+        </form>
+      </div>
+      <!-- Modal Agregar -->      
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>

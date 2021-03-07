@@ -1,0 +1,146 @@
+/*#####  Color Palette by Paletton.com
+#####  Palette URL: http://paletton.com/#uid=53n0u0kimMb7vXSdtSAmzECqWwZ
+*/
+
+:root {
+    --meblue: #5DBCD2;
+    --shade0: #5DBCD2;
+    --shade1: #adefff;
+    --shade2: #88D4E5;
+    --shade3: #3BA3BB;
+    --shade4: #1D88A1;
+    --secondary-shade0: #6B83D9;
+    --secondary-shade1: #b5c4f8;
+    --secondary-shade2: #93A5E9;
+    --secondary-shade3: #4B65C6;
+    --secondary-shade4: #2D49B0;
+    --secondary2-shade0: #60E182;
+    --secondary2-shade1: #a5f8bc;
+    --secondary2-shade2: #8AEEA4;
+    --secondary2-shade3: #3ED265;
+    --secondary2-shade4: #1FC149;
+}
+
+.mbb-dashboard.mono-meblue [class^="ct-series"]  line{
+    stroke: var(--meblue);
+}
+
+.mbb-dashboard .ct-series-a line{
+    stroke: var(--shade0);
+}
+
+.mbb-dashboard .ct-series-b line{
+    stroke: var(--secondary-shade0);
+}
+
+.mbb-dashboard .ct-series-c line{
+    stroke: var(--secondary2-shade0);
+}
+
+.mbb-dashboard .ct-series-d line{
+    stroke: var(--shade1);
+}
+
+.mbb-dashboard .ct-series-e line{
+    stroke: var(--secondary-shade1);
+}
+
+.mbb-dashboard .ct-series-f line{
+    stroke: var(--secondary2-shade1);
+}
+
+.mbb-dashboard .ct-series-g line{
+    stroke: var(--shade2);
+}
+
+.mbb-dashboard .ct-series-h line{
+    stroke: var(--secondary-shade2);
+}
+
+.mbb-dashboard .ct-series-i line{
+    stroke: var(--secondary2-shade2);
+}
+
+.mbb-dashboard .ct-series-j line{
+    stroke: var(--shade3);
+}
+
+.mbb-dashboard .ct-series-k line{
+    stroke: var(--secondary-shade3);
+}
+
+.mbb-dashboard .ct-series-l line{
+    stroke: var(--secondary2-shade3);
+}
+
+.mbb-dashboard .ct-series-m line{
+    stroke: var(--shade4);
+}
+
+.mbb-dashboard .ct-series-n line{
+    stroke: var(--secondary-shade4);
+}
+
+.mbb-dashboard .ct-series-o line{
+    stroke: var(--secondary2-shade4);
+}
+
+.mbb-dashboard .active.animated.inverted.dimmer
+{
+    display: block;
+
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    animation: fadeInFromNone 0.5s ease-out;
+}
+
+.mbb-dashboard .hidden.animated.inverted.dimmer
+{
+    display: block;
+    -webkit-animation: fadeOutToNone 0.5s ease-in;
+    -moz-animation: fadeOutToNone 0.5s ease-in;
+    -o-animation: fadeOutToNone 0.5s ease-in;
+    animation: fadeOutToNone 0.5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+@keyframes fadeOutToNone {
+    0% {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    99% {
+        display: block;
+        opacity: 0.1;
+        z-index: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}

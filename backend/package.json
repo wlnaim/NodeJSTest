@@ -1,0 +1,36 @@
+{
+  "name": "demo-api",
+  "version": "0.0.1",
+  "private": true,
+  "description": "API in express",
+  "main": "server.js",
+  "author": "demo",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "mocha --timeout 5000"
+  },
+  "dependencies": {
+    "acorn": "^8.0.4",
+    "acorn-jsx": "^5.3.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "env-cmd": "^10.1.0",
+    "express": "^4.16.4",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "isomorphic-unfetch": "^3.1.0",
+    "jwks-rsa": "^1.12.2",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.9.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0",
+    "standard": "^14.3.4"
+  }
+}
